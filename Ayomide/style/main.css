@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #E5E5E5;
+  color: #000400;
+}
+
+.loader {
+  background: #000400;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  color: #E5E5E5;
+  font-family: 'Oswald', sans-serif;
+  font-size: calc(1.5rem + 1vw);
+}
+
+.loader p {
+  text-align: center;
+  padding-top: 20%;
+}
+
+.loader p span {
+  -webkit-animation: textly 2s infinite ease-in;
+          animation: textly 2s infinite ease-in;
+}
+
+@-webkit-keyframes textly {
+  0%,
+  100% {
+    font-size: 2rem;
+    opacity: 0.5;
+  }
+  50% {
+    font-size: 2.2rem;
+    opacity: 1.0;
+  }
+}
+
+@keyframes textly {
+  0%,
+  100% {
+    font-size: 2rem;
+    opacity: 0.5;
+  }
+  50% {
+    font-size: 2.2rem;
+    opacity: 1.0;
+  }
+}
+
+.logo {
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.me,
+.bio,
+.socials {
+  padding: 2% 10%;
+}
+
+.lineart {
+  padding: 0 2%;
+  height: 28rem;
+}
+
+.lineart .artbox {
+  height: 65vh;
+  padding-top: 12%;
+}
+
+.lineart .artbox img {
+  height: inherit;
+}
+
+.me {
+  font-size: calc(1.8rem + 1vw);
+  font-family: 'Oswald', sans-serif;
+  padding-top: 8%;
+}
+
+.bio {
+  font-size: calc(0.7rem + 1vw);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.bio p {
+  padding-bottom: 1%;
+}
+
+.socials {
+  font-size: calc(0.7rem + 1vw);
+  font-family: 'lato', sans-serif;
+  font-weight: 300;
+  color: #000400;
+}
+
+.socials a {
+  color: #000400;
+}
+
+@media screen and (min-width: 100px) and (max-width: 640px) {
+  .container {
+    display: block;
+  }
+  img {
+    margin: auto;
+    padding: 0 10%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 952px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .lineart {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .artbox {
+    padding: 0% 10%;
+  }
+  .myself {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+}
+/*# sourceMappingURL=main.css.map */
